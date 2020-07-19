@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-image: url("/img/fondo.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.header-nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+}
+
+.header-brand{
+    background-color: black;
+    display: flex;
+    width: 200px;
+    margin-left: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.header-brand img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding: auto;
+}
+
+.header-brand p{
+    color: whitesmoke;
+    margin: auto;
+    padding: auto;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: end;
+    
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.nav-list li{
+    margin: 15px;
+}
+
+.nav-list li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.main-section{
+    display: grid;
+    background-color: rgb(224, 224, 224);
+    width: 80%;
+    height: 510px;
+    margin: auto;
+    margin-top: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: -4px 10px 36px 22px rgba(0,0,0,0.4);
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-section-presentation{
+    width: auto;
+    height: 70%;
+    margin: 40px;
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+}
+
+.main-section-profile{
+    display: grid;
+    width: auto;
+    height: 70%;
+    margin: 40px;
+    padding: 40px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-section-photo {
+    background-color: rgb(38, 89, 255);    
+}
+
+.main-section-photo-redes{
+    display: flex;
+    background-color: coral;
+    grid-row-start: 2;
+    width: 100%;
+}
+
+.main-section-photo-redes ul{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.main-section-photo-redes li{
+    display: inline;
+    margin: 10px;
+    padding: auto;
+    align-content: center;
+    
+}
