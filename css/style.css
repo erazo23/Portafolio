@@ -13,9 +13,7 @@ li{
 }
 
 body{
-    background-image: url("/img/fondo.jpg");
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, rgba(92,92,92,1) 18%, rgba(94,92,91,1) 19%, rgba(196,112,22,1) 73%, rgba(196,112,22,1) 96%);    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
@@ -31,8 +29,9 @@ body{
     display: flex;
     width: 200px;
     margin-left: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius:-15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     
 }
 
@@ -41,12 +40,19 @@ body{
     height: 50px;
     margin: auto;
     padding: auto;
+    border-radius: 10px;
 }
 
 .header-brand p{
     color: whitesmoke;
     margin: auto;
     padding: auto;
+}
+
+.active{
+    color: white;
+    font-weight: bolder;
+    border-bottom: 2px solid white;
 }
 
 .nav-list{
@@ -68,8 +74,8 @@ body{
 }
 
 .main-section{
-    display: grid;
-    background-color: rgb(224, 224, 224);
+    display:grid;
+    background-color: rgb(243, 243, 243);
     width: 80%;
     height: 510px;
     margin: auto;
@@ -82,44 +88,53 @@ body{
 
 .main-section-presentation{
     width: auto;
-    height: 70%;
+    height: 50%;
     margin: 40px;
-    text-align: center;
+    text-align: justify;
     align-content: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .main-section-profile{
     display: grid;
     width: auto;
-    height: 70%;
+    height: 60%;
     margin: 40px;
     padding: 40px;
     grid-template-rows: 1fr 1fr;
 }
 
-.main-section-photo {
-    background-color: rgb(38, 89, 255);    
+.main-section-photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 60px;
+    margin-right: 60px;    
 }
 
-.main-section-photo-redes{
+.main-section-redes{
     display: flex;
-    background-color: coral;
     grid-row-start: 2;
     width: 100%;
 }
 
-.main-section-photo-redes ul{
+.main-section-redes ul{
+    display: grid;
     height: 100%;
     width: 100%;
     text-align: center;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
 }
 
-.main-section-photo-redes li{
-    display: inline;
-    margin: 10px;
-    padding: auto;
-    align-content: center;
-    
+.main-section-redes img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.main-section-redes a{
+    color: black;
+    text-decoration: none;
 }
