@@ -76,78 +76,18 @@ body{
     text-decoration: none;
 }
 
+
 main{
+
     display: flex;
     flex-direction: column;
     height: 561px;
     align-items: center;
 }
 
-.main-section{
-    display:flex;
-    background-color: rgb(243, 243, 243);
-    width: 80%;
-    height: 510px;
-    margin: auto;
-    margin-top: 50px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    box-shadow: -4px 10px 36px 22px rgba(0,0,0,0.4);
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.main-section-presentation{
-    width: 50%;
-    height: 80%;
-    margin: 30px;
-    text-align: justify;
-    align-content: center;
-    padding: 10px;
-    line-height: 25px;
-}
-
-.main-section-profile{
-    display: grid;
-    width: auto;
-    height: 50%;
-    margin: 30px;
-    padding: 40px;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 0;
-}
-
-.main-section-photo img{
+.hijo{
     width: 200px;
     height: 200px;
-    border-radius: 100px;
-    margin-left: 60px;
-    margin-right: 60px;    
-}
-
-.main-section-redes{
-    display: flex;
-    grid-row-start: 2;
-    width: 100%;
-}
-
-.main-section-redes ul{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 30px;
-}
-
-.main-section-redes img{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-}
-
-.main-section-redes a{
-    color: black;
-    text-decoration: none;
+    background-color: tomato;
+    border: 2px solid black;
 }
