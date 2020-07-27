@@ -8,9 +8,11 @@
     <title>Oscar Erazo</title>
 </head>
 <body>
-    <i class="icon-menu"></i>
+    
     <header>
+        
         <nav class="header-nav">
+        <i class="icon-menu burger-menu" id="burger-menu"></i>    
             <div class="header-brand">
                 <img src="./img/logo.png" alt="">
                 <p>Oscar Erazo</p>
@@ -42,17 +44,41 @@
                 </div>  
                 <div class="main-section-redes">
                     <ul>
-                        <li class="in"><a href="https://www.linkedin.com/in/oerazo23"><img src="./img/linkedin.png" alt=""><br></a></li>
-                        <li class="git"><a href="https://github.com/erazo23"><img src="./img/github.png" alt=""><br></a></li>
-                        <li class="ig"><a href="https://www.instagram.com/oerazo.m/"><img src="./img/instagram.png" alt=""><br></a></li>
-                        <li class="ig"><a href="https://api.whatsapp.com/send?phone=3002468928"><img src="./img/whatsapp.png" alt=""><br></a></li>
+                        <li class="in"><a href="https://www.linkedin.com/in/oerazo23"><img src="./img/linkedin.png" alt=""></a></li>
+                        <li class="git"><a href="https://github.com/erazo23"><img src="./img/github.png" alt=""></a></li>
+                        <li class="ig"><a href="https://www.instagram.com/oerazo.m/"><img src="./img/instagram.png" alt=""></a></li>
+                        <li class="ig"><a href="https://api.whatsapp.com/send?phone=3002468928"><img src="./img/whatsapp.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <script>
+        const ipad = window.matchMedia(' screen and (max-width: 768px)')
+        const menu = document.querySelector('.nav-list');
+        console.log(menu);
 
-    </footer>
+        const burgerButton = document.querySelector('#burger-menu');
+        console.log(burgerButton);
+
+        ipad.addListener(validation)
+
+        function validation(event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow);
+            } else {
+                burgerButton.removeEventListener('click', hideShow);
+            }
+            
+        }
+
+        function hideShow() {
+            if (menu.classList.contains('desplegado')) {
+                menu.classList.remove('desplegado');
+            } else {
+                menu.classList.add('desplegado');
+            }            
+        }
+    </script>
 </body>
 </html>
