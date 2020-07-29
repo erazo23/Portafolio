@@ -23,7 +23,6 @@
     [class^="icon-"], [class*=" icon-"] {
         /* use !important to prevent issues with browser extensions that change fonts */
         font-family: 'icomoon' !important;
-        speak: never;
         font-style: normal;
         font-weight: normal;
         font-variant: normal;
@@ -69,7 +68,8 @@ li{
 }
 
 body{
-    background: linear-gradient(to bottom, rgb(70, 69, 69) 18%, rgb(73, 71, 70) 19%, rgba(196,112,22,1) 73%, rgba(196,112,22,1) 83%);    
+    /*background: linear-gradient(to bottom, rgb(70, 69, 69) 18%, rgb(73, 71, 70) 19%, rgba(196,112,22,1) 73%, rgba(196,112,22,1) 83%);    */
+    background-image: url("../img/d.jpg");
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     background-repeat: no-repeat;
@@ -125,7 +125,6 @@ body{
 
 .active{
     color: white;
-    font-weight: bolder;
     border-bottom: 2px solid white;
 }
 
@@ -146,26 +145,27 @@ body{
 .nav-list li a{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .main-section{
     display:flex;
     flex-wrap: wrap;
-    background-color: rgba(243, 243, 243, 0.199);
-    max-width: 88%;
-    min-height: 593px;
+    background-color: rgba(187, 187, 187, 0.76);
+    max-width: 85%;
+    height: auto;
     margin: auto;
     margin-top: 30px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    box-shadow: -4px 10px 36px 22px rgba(0,0,0,0.4);
+    box-shadow: -4px 10px 36px 22px rgba(0,0,0,0.6);
 }
 
 .main-section-presentation{
     width:auto;
+    height: auto;
     text-align: justify;
     align-content: center;
     line-height: 25px;
@@ -213,17 +213,84 @@ body{
     text-decoration: none;
 }
 
+/* _______________proyectos________________ */
+
+.proyectos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(187, 187, 187, 0.76);
+    max-width: 85%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: -4px 10px 36px 22px rgba(0,0,0,0.6);
+    align-items: center;
+}
+.card-proyecto{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(217, 235, 227, 0.781);
+    width: 85%;
+    min-height: 18em;
+    height: auto;
+    margin: 3%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.card-proyecto-content{
+    display: grid;
+    height: auto;
+    width: 49%;
+    padding: 3%;
+
+}
+
+.card-proyecto-content span{
+    font-size: 1.1em;
+
+}
+
+.card-proyecto-img{
+    background-color: rgba(30, 241, 153, 0.781);
+    height: auto;
+    width: 45%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.card-proyecto-img img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50px;
+}
+
+
+
+
 @media screen and (min-width: 769px){
 
     .main-section{
         display: flex;
         flex-wrap: nowrap;
+        height: 560px;
         
     }
     .main-section-presentation{
         width: 46%;
         padding: 4%;
-        font-size: .83em;
+        font-size: .90em;
     }
 
 
@@ -281,6 +348,7 @@ body{
         justify-content: center;
         width: 100%;
         flex-wrap: wrap;
+        margin-right: 0;
     }
 
     .nav-list li a{
